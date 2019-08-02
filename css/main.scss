@@ -1,0 +1,73 @@
+@import "kzhang";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+@mixin bgimg($url) {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url($url);
+}
+
+.bgimg-1 {
+  @include bgimg("/image/parallax1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  @include bgimg("/image/parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  @include bgimg("/image/parallax3.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  @include bgimg("/image/parallax4.jpg");
+  min-height: 400px;
+}
+
+.kzhang-wide {
+  letter-spacing: 10px;
+}
+
+.kzhang-hover-opacity {
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+#project img,
+#photography img {
+  width: 100%;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}

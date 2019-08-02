@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+		<title>ZK's Photography</title>
+	</head>
+	<body>
+		<div>
+			<div class="w3-opacity w3-container">
+				<div class="w3-clear"></div>
+				<header class="w3-center w3-margin-bottom">
+					<h1>
+						<a href="./index.html" title="Back to homepage"><i class="fas fa-home"></i></a>
+					</h1>
+					<h1>摄影作品集</h1>
+					<p>欢迎来到我的摄影作品集，这是其中的一小部分，以后我会添加更多自己满意的作品</p>
+				</header>
+			</div>
+
+			<div class="w3-row" id="myGrid"></div>
+			<!-- Modal for full size images on click-->
+			<section id="album_modal" class="w3-modal w3-black">
+				<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"
+					><i class="fa fa-remove"></i
+				></span>
+				<div class="w3-animate-zoom w3-center w3-transparent">
+					<img id="img01" class="w3-image" />
+					<p id="caption" class="w3-opacity w3-large"></p>
+				</div>
+			</section>
+		</div>
+	</body>
+	<script src="./js/photography.js"></script>
+</html>

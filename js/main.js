@@ -16,9 +16,9 @@ ALBUM_MODAL.addEventListener('click', () => {
 const myFunction = () => {
 	const navbar = document.getElementById('myNavbar');
 	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-		navbar.classList.add('kzhang-card', 'kzhang-animate-top', 'kzhang-white');
+		navbar.classList.add('w3-card', 'w3-animate-top', 'w3-white');
 	} else {
-		navbar.classList.remove('kzhang-card', 'kzhang-animate-top', 'kzhang-white');
+		navbar.classList.remove('w3-card', 'w3-animate-top', 'w3-white');
 	}
 };
 

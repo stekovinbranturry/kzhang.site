@@ -44,7 +44,7 @@ const album3 = [
 const album = a => {
 	let img = '';
 	a.forEach(el => {
-		img += `<img src="./image/photography/${el}.jpeg" class="zoomout-img" alt=${el} />`;
+		img += `<img src="./image/photography/${el}.jpeg" class="zoomout-img" loading="lazy" alt=${el} />`;
 	});
 	return `
   				<div class="w3-third">
